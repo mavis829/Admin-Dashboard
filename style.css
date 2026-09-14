@@ -27,7 +27,17 @@ body {
   
   display: flex;            /* optional — but gives you gap */
   flex-direction: column;
-  gap: 44px;
+  gap: 56px;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.nav-group + .nav-group {
+  margin-top: 20px;             /* extra, only between the two groups */
 }
 
 .title,
