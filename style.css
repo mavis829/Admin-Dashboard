@@ -12,6 +12,7 @@ body {
   grid-template-columns: 300px 1fr;
   grid-template-rows: auto 1fr;
   min-height: 100vh;
+  font-family: 'Roboto', system-ui, -apple-system, sans-serif;
 }
 
 .sidebar {
@@ -20,11 +21,13 @@ body {
 
 /*design the sidebar contents*/
 .sidebar {
-  padding: 24px 16px;
-  background-color: blue;
+  padding: 20px 24px 20px 18px;
+  background-color: #1992d4;
+  color: #fff;
+  
   display: flex;            /* optional — but gives you gap */
   flex-direction: column;
-  gap: 14px;
+  gap: 44px;
 }
 
 .title,
@@ -52,7 +55,8 @@ body {
 }
 
 .item-text {
-  font-size: 20px; 
+  font-size: 18px; 
+  font-weight: 500;
   color: #fff;
 }
 
