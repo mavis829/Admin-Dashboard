@@ -54,6 +54,12 @@ bell-icon {
   height: 20px; 
 }
 
+.profile-photo {
+  filter: brightness(0) invert(1);
+  width: 30px;  
+  height: 30px; 
+}
+
 
 .header {
   background-color: white;
