@@ -3,11 +3,21 @@
   padding: 0;
 }
 
-.container {
+.sidebar {
+  background-color: blue;
+}
+
+.header {
+  background-color: white;
+}
+
+
+.main-container {
+  background-color: grey;
   text-align: center;
 }
 
-.container div {
+.main-container {
   padding: 15px;
   font-size: 32px;
   font-family: Helvetica;
@@ -15,58 +25,30 @@
   color: white;
 }
 
-.header {
-  background-color: #393f4d;
-}
-
-.nav ul,
-.menu ul {
-  font-size: 16px;
-  list-style-type: none;
-}
-
-.sidebar {
-  background-color: #C50208;
-}
-
-.sidebar .photo {
+/*.sidebar .logo {
   background-color: white;
   color: black;
   font-size: 12px;
   font-weight: normal;
   border-radius: 10px;
-}
+}*/
 
 
-.sidebar .side-content {
-  background-color: white;
-  color: black;
+/*.sidebar .sidebar-item .item-text {
+  color: white;
   font-size: 16px;
   font-weight: normal;
-}
+}*/
 
-.nav {
-  background-color: #C50208;
-}
-
-.nav ul li {
-  text-transform: uppercase;
-}
-
-.article {
-  background-color: #bccbde;
-}
-
-.article p {
-  font-size: 18px;
-  font-family: sans-serif;
-  color: white;
-  text-align: left;
-}
-
-.article .card {
-  background-color: #FFFFFF;
+.main-container .project-section .card {
+  background-color: white;
   color: black;
+  text-align: center;
+}
+
+.card .title {
+  color: black;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -76,16 +58,3 @@
   font-size: 14px;
 }
 
-.card .title {
-  font-size: 18px;
-  text-align: center;
-}
-
-.footer {
-  background-color: #393f4d;
-}
-
-.footer p {
-  font-size: 13px;
-  font-weight: normal;
-}
