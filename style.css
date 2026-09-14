@@ -33,11 +33,9 @@
 }
 
 .item-logo {
-  color:white;
   width: 24px;  
   height: 24px; 
 }
-
 
 .item-text {
   font-size: 20px; 
@@ -47,6 +45,13 @@
 .title-logo,
 .item-logo {
   filter: brightness(0) invert(1);
+}
+
+.search-icon,
+bell-icon {
+  filter: brightness(0) invert(1);
+  width: 20px;  
+  height: 20px; 
 }
 
 
