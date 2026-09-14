@@ -67,8 +67,12 @@ body {
 
 /*design the header with topline and second line contents*/
 .header {
-  background-color: white;
+  background-color: #fff;
   padding: 16px 40px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .12);
+  position: relative;
+  z-index: 1;
+  
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -96,13 +100,48 @@ body {
 
 .search-icon,
 .bell-icon {
-  width: 20px;  
-  height: 20px; 
+  width: 24px;
+  height: 24px;
+  flex: none;
 }
 
-.profile-photo {
-  width: 30px;  
-  height: 30px; 
+.search-box {
+  flex: 1;
+  max-width: 620px;
+  height: 32px;
+  border: none;
+  border-radius: 16px;
+  background-color: #e2e8f0;
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+.search-box:focus { 
+  outline: 2px solid #1992d4; 
+}
+
+.profile-photo       { 
+  width: 42px; 
+  height: 42px; 
+  flex: none; 
+}
+
+.profile-photo-large { 
+  width: 64px; 
+  height: 64px; 
+  flex: none; 
+}
+
+.profile-photo,
+.profile-photo-large {
+  border-radius: 50%;
+  background-color: #f0b429;
+  padding: 4px;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .second-line {
@@ -110,11 +149,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 40px 24px;
-}
-
-.profile-photo-large {
-  width: 40px;  
-  height: 40px; 
 }
 
 .greeting {
@@ -128,10 +162,33 @@ body {
   flex-direction: column;
 }
 
+.hi {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.greeting-name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
 .buttons {
   display: flex;
   gap: 24px;
 }
+
+.buttons button {
+  border: none;
+  background-color: #1992d4;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 32px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.buttons button:hover { background-color: #147bb5; }
 
 
 /*design the main container with the card grid and side panel contents*/
