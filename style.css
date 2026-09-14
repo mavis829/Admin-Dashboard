@@ -121,36 +121,23 @@
 
 .main-container {
   background-color: grey;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 24px;
+  padding: 32px;
+
 }
 
-.main-container {
-  padding: 15px;
-  font-size: 32px;
-  font-family: Helvetica;
-  font-weight: bold;
-  color: white;
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
 }
 
-/*.sidebar .logo {
-  background-color: white;
-  color: black;
-  font-size: 12px;
-  font-weight: normal;
-  border-radius: 10px;
-}*/
-
-
-/*.sidebar .sidebar-item .item-text {
-  color: white;
-  font-size: 16px;
-  font-weight: normal;
-}*/
-
-.main-container .project-section .card {
-  background-color: white;
-  color: black;
-  text-align: center;
+.side-panels {
+  display: grid;
+  gap: 24px;
+  align-content: start;
 }
 
 .card .title {
